@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form method="post" action="https://register-demo.freecodecamp.org" id="survey-form">
+            <fieldset>
+                <label id="name-label">Name <input type="text" id="name" name="name" required placeholder="Enter Your Name" class="info"></label>
+                <label id="email-label">Email <input type="email" id="email" name="email" required placeholder="Enter Your Email" class="info"></label>
+                <label id="number-label">Age (optional) <input type="number" id="number" name="age" placeholder="Age" min="13" max="120" class="info"></label>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown" class="opinion">Which option best describes your current role?
+                    <select id="dropdown" name="current-role">
+                        <option value="">select current role</option>
+                        <option value="1">Student</option>
+                        <option value="2">Full Time Job</option>
+                        <option value="3">Full Time Learner</option>
+                        <option value="4">Prefer not to Say</option>
+                        <option value="5">Other</option>
+                    </select>
+                </label>
+                <label for="referral" class="opinion">Would you recommend freeCodeCamp to a friend?
+                    <label><input type="radio" name="referral" id="referral" value="Definitely">Definitely</label>
+                    <label><input type="radio" name="referral" id="referral" value="maybe">Maybe</label>
+                    <label><input type="radio" name="referral" id="referral" value="not sure">Not Sure</label>
+                </label>
+                <label for="feature" class="opinion">What is your favorite feature of freeCodeCamp?
+                    <select id="feature" name="feature">
+                        <option value="">Select an option</option>
+                        <option value="1">Challenges</option>
+                        <option value="2">Projects</option>
+                        <option value="3">Community</option>
+                        <option value="4">Open Source</option>
+                    </select>
+                </label>
+                <label for="suggestion" class="opinion">What would you like to see improved? (Check all that apply)
+                    <label><input type="checkbox" id="suggestion" value="Front-End" name="suggestion">Front End Projects</label>
+                    <label><input type="checkbox" id="suggestion" value="Back-End" name="suggestion">Back End Projects</label>
+                    <label><input type="checkbox" id="suggestion" value="Data" name="suggestion">Data Visualisation</label>
+                    <label><input type="checkbox" id="suggestion" value="Challenges" name="suggestion">Challenges</label>
+                    <label><input type="checkbox" id="suggestion" value="Community" name="suggestion">Open Source Community</label>
+                    <label><input type="checkbox" id="suggestion" value="Gitter" name="suggestion">Gitter Help Rooms</label>
+                    <label><input type="checkbox" id="suggestion" value="Videos" name="suggestion">Videos</label>
+                    <label><input type="checkbox" id="suggestion" value="Meetups" name="suggestion">City Meetups</label>
+                    <label><input type="checkbox" id="suggestion" value="wiki" name="suggestion">wiki</label>
+                    <label><input type="checkbox" id="suggestion" value="forum" name="suggestion">Forum</label>
+                    <label><input type="checkbox" id="suggestion" value="courses" name="suggestion">Additional Courses</label>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="comments">Any Comments or suggestions?
+                    <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter Your Comment Here"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </body>
+</html>
